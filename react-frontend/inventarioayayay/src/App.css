@@ -1,0 +1,479 @@
+
+/* Establece Roboto como la fuente predeterminada */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.AppMain {
+  background-image: url('./images/fondo.png');
+  background-position: right bottom;
+  background-size: 25%;
+  background-repeat: no-repeat;
+  /* height: 100vh;  */
+  background-color: #e5d464;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.login {
+  background-color: #fff;
+  color: #0000;
+  display: grid;
+  min-width: 50vh;
+  min-height: 40vh;
+  border-radius: 3%;
+
+}
+
+.login-titulo{
+  display: grid;
+  align-items: center;
+  color: #000;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+.login-subtitulo{
+  color: #000;
+  font-size: 2vh;
+  margin-top: 3%;
+  margin-bottom: 6%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.login-form{
+  display: grid;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 10%;
+  margin: 5%;
+  font-size: 14px;
+}
+
+.login-label{
+  text-align: left;
+  color: #000;
+  font-weight: 575;
+}
+
+.login-input-div{
+  display: grid;
+  width: 100%;
+  gap: 15%;
+  align-content: center;
+
+}
+
+.login-input-div-contraseña{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 3px;
+}
+
+.login-input-div-contraseña-input-boton{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(170, 170, 170);
+  outline: none;
+}
+
+
+.login-input-contrasena{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(170, 170, 170);
+  outline: none;
+  width: 90%;
+}
+
+.menu{
+  color: #0000;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1vh;
+  min-width: 50vh;
+  min-height: 40vh;
+  border-radius: 3%;
+}
+
+.menu-link{
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 2vh;
+}
+
+.menu-link:link{
+  text-decoration: none;
+  color: black;
+}
+
+.menu-link:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.menu-link:hover{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.menu-carta{
+  background-color: white;
+  border-radius: 1vh;
+}
+
+.menu-carta-div{
+  display: flex;
+  flex-direction: column;
+  border-radius: 1vh;
+}
+.menu-carta-div:hover{
+  display: flex;
+  flex-direction: column;
+  background-color: chocolate;
+  box-shadow: 0px 4px 3px 0px #00000038;
+}
+
+.css-tzssek-MuiSvgIcon-root{
+  margin-top: 2vh;
+  margin-bottom: 0;
+}
+
+.menu-carta-div-encabezado{
+  font-size: 5vh;
+}
+
+.menu-carta-div-encabezado-titulo{
+  margin-top: 0;
+  margin-bottom: 1vh;
+}
+
+.menu-carta-div-descripcion{
+  margin-top: 0;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  font-size: .9rem;
+}
+
+.barra-superior{
+  color: white;
+  position: fixed;
+    top: 0;
+    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(210, 105, 30, 0.444);
+}
+
+.barra-superior-info-taqueria{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  margin-left: 4vh;
+  max-width: 50%;
+}
+
+.barra-superior-info-usuario{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  margin-right: 4vh;
+  max-width: 50%;
+}
+
+.barra-superior-info-usuario{
+  text-align: end;
+  font-size: 2.3vh;
+}
+
+.barra-superior-info-usuario-botones{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-content: center; */
+  align-items: center;
+  gap: 2vh;
+}
+
+.barra-superior-info-taqueria-empresa{
+  font-size: 3vh;
+  margin-bottom: 1.7vh;
+}
+
+.barra-superior-info-taqueria-sucursal{
+  font-size: 2.5vh;
+  margin-top: 0;
+  text-align: start;
+  color: rgba(255, 255, 255, 0.793);
+}
+
+.panel-movimientos-entrada{
+  min-width: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 2vh;
+  /* border: 1px solid rgb(20, 167, 0); */
+  box-shadow: 0px 7px 3px 0px #227a23;
+}
+
+.panel-movimientos-salida{
+  min-width: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 2vh;
+  /* border: 1px solid red; */
+  box-shadow: 0px 7px 3px 0px #ff0000;
+}
+
+.panel-movimientos-select{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.panel-movimientos-select-select-span-insumo{
+  color: #373737;
+  text-align: start;
+  margin-bottom: 2vh;
+  margin-top: 3vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+
+.panel-movimientos-select-select-span-cantidad{
+  color: #373737;
+  text-align: start;
+  margin-bottom: 2vh;
+  margin-top: 3vh;
+}
+
+.panel-movimientos-select-select-span-cantidad-cantidad{
+  display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.panel-movimientos-select-select-span-cantidad-cantidad-medida{
+  color: #555;
+    margin-left: 2vh;
+}
+
+.panel-movimientos-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2vh;
+}
+
+.insumos-tabla{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: 61vh;
+  background-color: #f5f5f5;
+  border-radius: 1vh;
+  align-items: start;
+  box-shadow: 0px 7px 3px 0px #00000038;
+}
+
+.insumos-tabla-buttons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.superimposed-rows{
+  background-color: rgb(255, 77, 77) !important;
+  color: white;
+}
+
+.superimposed-header{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.movimientos{
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  gap: 2vh;
+  border-radius: 2vh;
+  box-shadow: 0px 7px 3px 0px #00000038;
+}
+
+.movimientos-input{
+  display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    margin-right: 4vh;
+    margin-left: 4vh;
+    margin-top: 2vh;
+    align-items: center;
+}
+
+.movimientos-input-titulo{
+  color: #3f3f3f;
+  font-size: xx-large;
+}
+
+.movimientos-input-inputs{
+  display: flex;
+  height: 50%;
+  gap: 2vh;
+}
+
+.css-10o2lyd-MuiStack-root{
+  padding-top: 0;
+}
+
+.usuarios-tabla{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: 61vh;
+  background-color: #f5f5f5;
+  border-radius: 1vh;
+  gap: 2vh;
+  box-shadow: 0px 7px 3px 0px #00000038;
+}
+
+.usuarios-tabla-botones{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.registro-usuario {
+  display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 252, 252);
+    border-radius: 1vh;
+}
+
+.registro-usuario-formulario{
+  display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin: 2vh;
+}
+
+.registro-usuario-titulo{
+  margin-top: 3vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-bottom: 1vh;
+  font-size: 3vh;
+  color: #000;
+}
+
+.registro-usuario-subtitulo{
+  margin-top: 0;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-bottom: 0;
+  color: #4d4d4d;
+  font-size: 2vh;
+}
+
+.registro-producto{
+  background-color: #ffffff;
+  border-radius: 1vh;
+  box-shadow: 0px 7px 3px 0px #00000038;
+}
+
+.registro-producto-form{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2vh;
+    gap: 3vh;
+}
+
+.registro-producto-form-botones{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.registro-producto-form-titulo{
+  color: #3f3f3f;
+  font-size: x-large;
+  text-align: start;
+  margin: 2vh;
+  margin-top: 3vh;
+}
+
+.show-password-button{
+  border: none;
+  background-color: #ededed;
+  border-radius: 3vh;
+  cursor: pointer;
+}
+
+.cambio-formulario{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  margin: 2vh;
+  gap: 2vh;
+}
